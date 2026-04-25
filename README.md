@@ -8,9 +8,10 @@ This project was created as an assignment for the course Advanced GIS: Interacti
 
 ## Files
 
-- 'index.html' - my main HTML file
+- 'index.html' - my HTML file
 - 'style.cs' - my stylesheet
 - 'script.js' - my Javascript file
+- 'philadelphia-neighborhoods.geojson' - my GeoJson file
 
 
 ## Technologies Used
@@ -19,3 +20,9 @@ This project was created as an assignment for the course Advanced GIS: Interacti
 - CSS
 - Javascript
 - Mapbox GL JS
+- GeoJSON
+- ChatGPT 
+
+## Data Used
+
+I used [Open Data Philly](https://opendataphilly.org/datasets/philadelphia-neighborhoods/) to create the map of neighborhoods for this project. 
