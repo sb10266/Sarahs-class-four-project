@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Mapping the City of Philadelphia </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js"></script>
+</head>
+<!-- this is the standard HTML code I use to start all my proejcts in this class, and then I used this same mapbox info in my class three assignment, which was also on philadelphia. i liked it, so pulled it in here -->
+
+<body>
+<div id="page-header">
+    <h1>The City of Philadelphia</h1>
+    <p>Philadelphia is a <a
+            href="https://www.pew.org/en/research-and-analysis/articles/2025/03/10/philadelphia-a-city-of-neighborhoods"
+            target="_blank">City of Neighborhoods</a> -
+        <!-- I figured out how to do this from watching a tutorial on YouTube, while it's really helpful to have been able to do so much of this project going back and forth with ChatGPT and asking it to do things for me, it's also really nice to be able to figure things out on my own. In these projects I typically try to have a good mix of both -->
+        there are over 150! You can click any area on the map to see what neighborhood it is, or click the
+        regions in the legend to see a list of all the neighborhoods within it.
+    </p>
+</div>
+    <div id="map-container"> 
+        <div id="legend"> <!-- I didn't do this on my class three assignment, but it was recommended by ChatGPT and then my google search to place the legend inside the map div for the best functionality -->
+            <!-- I had ChatGPT help me with the code for the legend to get it into clickable regions. I also asked it to give me a palette in earth tones focused on greens and brown, since the Philadelphia Eagles are a clear symbol of Philly and green is their primary color. -->
+            <h4>Regions</h4>
+
+            <div id="legend-northwest" class="legend-item"><span style="background:#355f3a"></span> Northwest</div>
+            <div id="legend-north" class="legend-item"><span style="background:#4c8c4a"></span> North</div>
+            <div id="legend-northeast" class="legend-item"><span style="background:#7fbf7b"></span> Northeast</div>
+            <div id="legend-west" class="legend-item"><span style="background:#bf812d"></span> West</div>
+            <div id="legend-central" class="legend-item"><span style="background:#dfc27d"></span> Central</div>
+            <div id="legend-east" class="legend-item"><span style="background:#80cdc1"></span> East</div>
+            <div id="legend-south" class="legend-item"><span style="background:#a6611a"></span> South</div>
+
+            <hr />
+
+            <div id="legend-list"></div>
+
+            <p id="legend-label">
+                Click a region in the legend to explore neighborhoods, or click directly on the map.
+            </p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
